@@ -9,6 +9,7 @@ public interface UserDao {
 	User login(User user);
 	public void update(User validUser);
 	public User getUser(String email);
+	void updateUser(User user);
 		
 	
 	
