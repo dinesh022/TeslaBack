@@ -7,4 +7,5 @@ import com.niit.model.BlogPost;
 public interface BlogPostDao {
 void addBlogPost(BlogPost blogPost);
 List<BlogPost> listOfBlogs(int approved);
+ BlogPost getBlog(int id);
 }

@@ -50,5 +50,3 @@ public class DBConfiguration {
 		return new HibernateTransactionManager(sessionFactory());
 	}
 }
-
-
