@@ -23,6 +23,7 @@ private String blogTitle;
 private String blogContent;
 private Date postedon;
 @ManyToOne
+@Column(nullable=false)
 private User postedBy;
 private int likes;
 private boolean approved;

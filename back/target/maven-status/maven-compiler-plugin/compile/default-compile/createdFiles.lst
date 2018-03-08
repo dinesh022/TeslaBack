@@ -3,11 +3,9 @@ com\niit\dao\BlogPostDao.class
 com\niit\dao\JobDao.class
 com\niit\model\BlogPost.class
 com\niit\config\WebAppConfig.class
-com\niit\config\DBConfiguration.class
 com\niit\model\Job.class
 com\niit\model\ErrorClazz.class
 com\niit\dao\BlogPostDaoImpl.class
-com\niit\config\WebAppInitializer.class
 com\niit\dao\UserDao.class
 com\niit\dao\JobDaoImpl.class
 com\niit\dao\UserDaoImpl.class

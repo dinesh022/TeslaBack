@@ -16,20 +16,20 @@ import com.niit.model.Job;
 public class JobDaoImpl implements JobDao {
 @Autowired
 private SessionFactory sessionFactory;
-	@Override
+	
 	public void addJob(Job job) {
 		// TODO Auto-generated method stub
     Session session = sessionFactory.getCurrentSession();
     session.save(job);
 	}
-	@Override
+	
 	public List<Job> getAllJobs() {
 		// TODO Auto-generated method stub
 	Session session = sessionFactory.getCurrentSession();
 	Query query=session.createQuery("from Job");
 	return query.list();
 	}
-	@Override
+	
 	public Job getJob(int id) {
 		// TODO Auto-generated method stub
 	Session session = sessionFactory.getCurrentSession();

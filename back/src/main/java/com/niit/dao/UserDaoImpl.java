@@ -18,7 +18,7 @@ private SessionFactory sessionFactory;
     	  System.out.println("UserDaoImpl bean is created");
       }
 	
-	@Override
+	
 	public void registerUser(User user) {
 		// TODO Auto-generated method stub
     Session session = sessionFactory.getCurrentSession();
@@ -42,21 +42,21 @@ private SessionFactory sessionFactory;
 		return (User)query.uniqueResult();
 	}
 
-	@Override
+	
 	public void update(User validUser) {
 		Session session=sessionFactory.getCurrentSession();
 		session.update(validUser);
 		
 	}
 
-	@Override
+	
 	public User getUser(String email) {
 		Session session=sessionFactory.getCurrentSession();
 		User user=(User)session.get(User.class, email);
 		return user;
 	}
 
-	@Override
+	
 	public void updateUser(User user) {
 		Session session=sessionFactory.getCurrentSession();
 		session.update(user);
